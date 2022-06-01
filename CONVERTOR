@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>
+      Imersão Dev 
+    </title>
+    <style>
+        body {
+  font-family: 'Georgia',monospace;
+  min-height: 400px;
+  background-image: url('https://i.pinimg.com/originals/35/54/93/355493bdddc8b712b1a19025ccbdd09c.png');
+  background-color: #3f48cc;
+  background-size: 70vh;
+  background-position:center bottom;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+    font-style: oblique;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right:10px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-title">
+        Na Real, vale quanto?
+      </h1>
+      <p class="page-subtitle">
+        Conversor de moeda para viagens
+      </p>
+    
+      <form id="comments_form" action="#" method="post">
+        <fieldset>
+          <p>
+            <label for="destino">Destino de viagem: </label>
+            <input pais ="destino" id="destino" type="text" />
+          </p>
+      
+        <p>
+          <input type="button" value="OK" id="btnSubmit"/>
+        </p>
+      
+      </form>
+    
+      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
+    </div>
+      <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        </a>
+    <script>
+        var form = document.getElementById('comments_form'); 
+        var dolar = destino * 5.5
+        var won = destino * 0.2
+form.addEventListener('submit', function(e) {
+    if (destino == "Estados Unidos") {
+    console.log(dolar)
+    }
+    </script>
+        
+  </body>
+</html>
